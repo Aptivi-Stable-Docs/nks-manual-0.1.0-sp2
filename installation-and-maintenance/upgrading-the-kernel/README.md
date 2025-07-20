@@ -6,7 +6,7 @@ icon: up
 # Upgrading the Kernel
 
 {% hint style="warning" %}
-### Stop!
+#### Stop!
 
 Before you can upgrade, you need to consider the following:
 

@@ -1,6 +1,6 @@
 ---
-icon: star
 description: Ordered list of simulated kernel flow
+icon: star
 ---
 
 # Simulated Kernel Features
@@ -45,8 +45,8 @@ The buttons below lists some of the features that blow your mind.
 [screensavers.md](screensavers.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="https://github.com/Aptivi-Stable-Docs/nks-manual-0.1.0-sp2/blob/main/fundamentals/simulated-kernel-features/broken-reference/README.md" %}
+[https://github.com/Aptivi-Stable-Docs/nks-manual-0.1.0-sp2/blob/main/fundamentals/simulated-kernel-features/broken-reference/README.md](https://github.com/Aptivi-Stable-Docs/nks-manual-0.1.0-sp2/blob/main/fundamentals/simulated-kernel-features/broken-reference/README.md)
 {% endcontent-ref %}
 
 In addition to the above features, consult the below page to get some of the extra features:
