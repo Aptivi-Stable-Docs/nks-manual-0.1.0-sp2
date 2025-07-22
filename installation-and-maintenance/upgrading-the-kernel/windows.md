@@ -24,7 +24,3 @@ Nitrocid KS can also be manually updated in case the automatic updater failed to
 3. Unpack the ZIP archive to any folder of your choice
 4. Open your favorite terminal emulator, like ConEmu, and change the working directory to a folder containing the Nitrocid KS executable
 5. Execute `ks` or `Nitrocid.exe` to start the kernel
-
-{% hint style="info" %}
-For 0.0.24.x or older, files that end with the `-dotnet` prefix means that it's for .NET 6.0.
-{% endhint %}

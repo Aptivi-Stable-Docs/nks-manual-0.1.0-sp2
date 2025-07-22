@@ -14,7 +14,7 @@ The tricky part is getting Nitrocid KS to run on Android phones and tablets, esp
 To install Nitrocid KS on your phone or tablet, install the following dependencies:
 
 * [Termux](https://termux.dev/en/)
-* [Ubuntu PRoot](https://wiki.termux.com/wiki/PRoot#Installing\_Linux\_distributions)
+* [Ubuntu PRoot](https://wiki.termux.com/wiki/PRoot#Installing_Linux_distributions)
 
 Ensure that your Android version is compatible with Termux. You need at least 8 GB of free storage and Android 7.0 or higher.
 
@@ -46,33 +46,11 @@ Once you're done, follow the steps:
    * `apt install dotnet-runtime-8.0`
 7. Install `wget` to download the latest release from [this page](https://github.com/Aptivi/NitrocidKS/releases).
    * `apt install wget`
-   * `wget https://github.com/Aptivi/NitrocidKS/releases/download/v0.x.x.x-beta/0.x.x.x-bin.zip`
+   * `wget https://github.com/Aptivi/Nitrocid/releases/download/v0.x.x.x/0.x.x.x-bin.zip`
 8. Install `unzip` to extract the files
    * `apt install unzip`
    * `unzip 0.x.x.x-bin.zip`
 9. Execute `dotnet Nitrocid.dll`
-
-{% hint style="info" %}
-For 0.0.24.x or older, files that end with the `-dotnet` prefix means that it's for .NET 6.0.
-{% endhint %}
-
-## Bleeding-edge
-
-Bleeding-edge builds usually come from building the development branch of the kernel, and they usually contain bugs and other untested features.
-
-If you're a tester to such software, please follow the steps on your Windows machine. Please be sure that you're signed in to your GitHub account.
-
-1. Open [this page](https://github.com/Aptivi/Kernel-Simulator/actions/workflows/build-linux.yml)
-2. Select the most recent build
-3. Scroll down to Artifacts and click on the `ks-build` button to download the ZIP file on your device
-4. Repeat steps 1-6 in the `Installation` section
-5. Now, use the `termux-setup-storage` command. Follow the instructions [here](https://wiki.termux.com/wiki/Termux-setup-storage).
-6. Copy the `ks-build.zip` file from `~/storage/downloads/ks-build.zip` to your home directory
-   * `cp ~/storage/downloads/ks-build.zip ~/`
-7. Still in the home directory, install unzip to extract the files
-   * `apt install unzip`
-   * `unzip ks-build.zip`
-8. Execute `dotnet Nitrocid.dll`
 
 ## Important notes
 
@@ -99,7 +77,7 @@ In order to fix the first message, append the below environment variable before 
 <pre class="language-shell-session"><code class="lang-shell-session"><strong>$ DOTNET_GCHeapHardLimit=1C0000000 dotnet build
 </strong></code></pre>
 
-However, to fix the second message, download the fixed version of `proot` using [this link](https://drive.google.com/file/d/1J9euzuGB5w6WGLVNVxTFVnrauTEzISAV/view?usp=sharing) ([mirror if down](https://mega.nz/file/6dYT2YrY#IPKfJRx3Rt8xql1ggyQ95rgEkpDd\_vksP02vnnaOPd4)) and run these commands outside the Ubuntu `proot-distro` environment:
+However, to fix the second message, download the fixed version of `proot` using [this link](https://drive.google.com/file/d/1J9euzuGB5w6WGLVNVxTFVnrauTEzISAV/view?usp=sharing) ([mirror if down](https://mega.nz/file/6dYT2YrY#IPKfJRx3Rt8xql1ggyQ95rgEkpDd_vksP02vnnaOPd4)) and run these commands outside the Ubuntu `proot-distro` environment:
 
 <pre class="language-shell-session"><code class="lang-shell-session"><strong># dpkg -i proot_5.1.107-50_aarch64.deb
 </strong><strong># apt-mark hold proot
